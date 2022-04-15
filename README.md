@@ -71,6 +71,8 @@ Bir zar uygulaması için örnek inceleyelim. Uygulamamızda bir buton ve zar ol
 `tools:src=@drawable/dice_1”` ifadesi ile ekranda dice_1 yani zarın 1 olan görünümünü görebiliriz.
 Yani tools attribute sayesinde yazılımcı tasarımını çalıştırmadan rahatlıkla görebilir.
 
+![diceexample](https://github.com/beyzaaydemir/UpschoolBootcampResearchAssignments/blob/main/dice_image.png)
+
 
  
  Özetle, uygulamamız çalıştığında başlangıçta herhangi bir zar görüntüsü yoktur, butona bastığımızda ekrana zar gelecektir. Gelecek zarın nasıl görüneceğini yazılımcı projeyi çalıştırmadan tasarım ekranında öncesinde görebilir. Bunu da tools attribute sayesinde gerçekleştirir.
