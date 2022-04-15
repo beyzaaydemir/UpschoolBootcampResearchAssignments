@@ -72,5 +72,8 @@ Bir zar uygulaması için örnek inceleyelim. Uygulamamızda bir buton ve zar ol
 Yani tools attribute sayesinde yazılımcı tasarımını çalıştırmadan rahatlıkla görebilir.
 
 
+Bir diğer önemli attribute ise tools:listitem ’dır. Xml dosyamıza bir recyclerview eklediğimizde recyclerview içerisinde tasarımını yaptıktan sonra listemizdeki verilerin nasıl görüneceğini tools:listitem sayesinde görebiliriz. Mesela recyclerview içerisine json dosyasından okuduğumuz verileri bastırmak isityoruz. Uygulamayı çalıştırmadan önce verileri tasarım ekranında görebiliriz. Bu işlemi de Sample Data klasörü sayesinde tasarım ekranında gerçek verilerle çalışıyormuş gibi xml dosyalarımızı düzenleyebiliriz. Xml dosyasında tools attribute kullanarak gerçek verilerin nasıl göründüğünde uygulamamızı çalıştırmadan önce tasarım ekranında rahatlıkla görebiliriz.
+
+
 
 
