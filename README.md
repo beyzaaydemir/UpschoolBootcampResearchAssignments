@@ -3,6 +3,7 @@
 - [Araştırma Projesi 1 - Lateinit](#1)
 - [Araştırma Projesi 2 - Tools Namespace](#2)
 - [Araştırma Projesi 3 - Font Family XML](#3)
+- [Araştırma Projesi 4 - Font Family XML](#4)
 
 
 ### <a name="1"></a> Araştırma Projesi 1
@@ -119,6 +120,8 @@ Fontumuzu tasarım ekranında görüntülüyoruz.
 
 
 ![fontexample](https://github.com/beyzaaydemir/UpschoolBootcampResearchAssignments/blob/main/FontExample.png)
+
+### <a name="4"></a> Araştırma Projesi 4
 
 
 
