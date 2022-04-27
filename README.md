@@ -116,6 +116,8 @@ Tasarım ekranımızda bulunan textview içerisine fontumuzu ekliyoruz.
         app:layout_constraintTop_toTopOf="parent" />
 ```
 Fontumuzu tasarım ekranında görüntülüyoruz.
+![fontexample](https://github.com/beyzaaydemir/UpschoolBootcampResearchAssignments/blob/main/dice_image.png)
+
 
 
 
