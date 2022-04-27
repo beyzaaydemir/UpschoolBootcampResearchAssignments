@@ -2,6 +2,7 @@
 
 - [Araştırma Projesi 1 - Lateinit](#1)
 - [Araştırma Projesi 2 - Tools Namespace](#2)
+- [Araştırma Projesi 3 - Font Family XML](#3)
 
 
 ### <a name="1"></a> Araştırma Projesi 1
@@ -78,6 +79,44 @@ Yani tools attribute sayesinde yazılımcı tasarımını çalıştırmadan raha
  Özetle, uygulamamız çalıştığında başlangıçta herhangi bir zar görüntüsü yoktur, butona bastığımızda ekrana zar gelecektir. Gelecek zarın nasıl görüneceğini yazılımcı projeyi çalıştırmadan tasarım ekranında öncesinde görebilir. Bunu da tools attribute sayesinde gerçekleştirir.
 
 Bir diğer önemli attribute ise tools:listitem ’dır. Xml dosyamıza bir recyclerview eklediğimizde recyclerview içerisinde tasarımını yaptıktan sonra listemizdeki verilerin nasıl görüneceğini tools:listitem sayesinde görebiliriz. Mesela recyclerview içerisine json dosyasından okuduğumuz verileri bastırmak isityoruz. Uygulamayı çalıştırmadan önce verileri tasarım ekranında görebiliriz. Bu işlemi de Sample Data klasörü sayesinde tasarım ekranında gerçek verilerle çalışıyormuş gibi xml dosyalarımızı düzenleyebiliriz. Xml dosyasında tools attribute kullanarak gerçek verilerin nasıl göründüğünde uygulamamızı çalıştırmadan önce tasarım ekranında rahatlıkla görebiliriz.
+
+### <a name="3"></a> Araştırma Projesi 3
+
+
+- Font family dosyası nasıl oluşturulup kullanıyoruz? 
+- Niçin böyle kullanımı tercih ediyoruz ?
+
+Uygulamalarımızda tasarım konusunda dikkat edilmesi gereken konulardan birisi de tasarımımızın kullanıcı tarafında bırakacağı etkidir. Textview, buton ya da edittext gibi komponentleri kullanırken yapmış olduğumuz kullanıcı ara yüzüne uygun font kullanmalıyız.
+XML Font Projelerimizde Nasıl Kullanılır? 
+İlk olarak projemizde app seçeneğine sağ tıklıyoruz. New source file seçeneğini seçiyoruz. 
+Dosyamıza isim veriyoruz ve resource type kısmını font olarak seçip OK butonuna basıyoruz.
+Fontlarımızı oluşturacağımız XML dosyası res/font klasörü içerisine eklenmiş durumdadır. İstediğimiz bir fontu indirerek sıkıştırılmış dosya biçiminden çıkartıp oluşturmuş olduğumuz res/font/ içerisine .ttf uzantılı dosyayı atabiliriz. Font’un istediğimiz metinlerde nasıl görüneceğini görebilmek için üzerine iki kez tıklayıp görüntüleyebiliriz.
+Oluşturduğumuz font.xml dosyamızı açılıyoruz ve bu dosyanın içerisine fontumuzu yazıyoruz.
+```
+<font-family 
+   xmlns:android="http://schemas.android.com/apk/res/android">
+   <font>
+       android:fontStyle="normal"
+       android:fontWeight="700"
+       android:font="font/tapestry_regular"
+   </font>
+</font-family>
+```
+Tasarım ekranımızda bulunan textview içerisine fontumuzu ekliyoruz.
+```
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tapestry_regular"
+        android:text="Font Kullanım Örneği"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+```
+Fontumuzu tasarım ekranında görüntülüyoruz.
+
 
 
 
