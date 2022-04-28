@@ -123,6 +123,39 @@ Fontumuzu tasarım ekranında görüntülüyoruz.
 
 ### <a name="4"></a> Araştırma Projesi 4
 
+- Property Animation ile ilgili olarak objectAnimator ile animator arasındaki farkı kısaca açıklayınız. 
+
+Arka plan rengi veya alfa değeri gibi bileşebib özelleiklerini belirli bir süre boyunca değiştiren animasyon türüdür. View ve view olmayan nesnelere uygulanabilir. View animasyondan en büyük farkı; view animasyonda view’in özellikleri değişmezken property animasyonda değişir.
+Mesela view animasyonda siyah bir butonu animasyon ile maviye dönüştürürsek animasyon bitince siyah renge geri döner. Fakat property animasyonda geri eski rengine dönmez. Sadece renk için değil boyut konum için de aynı durum geçerlidir. Değiştirilen değer artık o bileşenin kendi özelliği olur.
+3 farklı property animasyon sınıfı vardır:
+1)	Value Animator: Bu sınıf, animasyonlu değerleri hesaplayan ve bunları hedef nesnelere ayarlayan animasyonları çalıştırmak için basit bir zamanlama motoru sağlar.
+2)	Object Animator: Tek bir nesneye animasyon vermek istediğimiz zaman kullanılır. Object animator sınıfı value animatör sınıfının alt sınıfıdır.
+3)	Animator Set: Animasyonların belirlenen sırada uygulanmasını sağlar.
+
+```
+Object Animator Kullanımı:
+<objectAnimator 
+        android:propertyName="string"       <!--İlgili animasyonun adı-->
+        android:duration="int"               <!--animasyon süresi-->
+        android:valueFrom="float | int | color"  <!--Yapılacak animasyon-->
+        android:valueTo="float | int | color"     <!--Yapılacak animasyon-->
+        android:startOffset="int"             <!--Gecikme süresi-->
+        android:repeatCount="int"             <!--Tekrar sayıyı-->
+        android:repeatMode=["restart" | "reverse"]  <!--Tekrar edilme şekli-->
+        android:valueType=["intType" | "floatType"]/>
+```
+```
+Animator Kullanımı:
+<animator
+        android:duration="int"               <!--animasyon süresi-->
+        android:valueFrom="float | int | color"   <!--Yapılacak animasyon-->
+        android:valueTo="float | int | color"     <!--Yapılacak animasyon-->
+        android:startOffset="int"                 <!--Gecikme süresi-->
+        android:repeatCount="int"                 <!--Tekrar sayıyı-->
+        android:repeatMode=["restart" | "reverse"] <!--Tekrar edilme şekli-->
+        android:valueType=["intType" | "floatType"]/>
+
+```
 
 
 
